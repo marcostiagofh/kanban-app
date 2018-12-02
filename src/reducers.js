@@ -1,5 +1,5 @@
 import * as actions from "./actions";
-import deepFreeze from "deep-freeze";"
+import deepFreeze from "deep-freeze";
 
 export default (state = {}, action) => {
   switch (action.type) {
@@ -10,20 +10,21 @@ export default (state = {}, action) => {
         3: { name: "Card C", id: 3, columnIndex: 2 }
       };
     case actions.MOVE: {
-      deepFreeze(state)
+      deepFreeze(state);
       const { columnIndex, cardId, direction } = action;
-      return{
-        ...state, 
+      return {
+        ...state,
         [cardId]: {
           ...state[cardId],
           columnIndex: columnIndex + direction
         }
-      }
+      };
     }
     case actions.ADD: {
       const { card } = action;
-      return { ...state, [card.id]: ca};
+      return { ...state, [card.id]: card };
     }
-    default: return state
+    default:
+      return state;
   }
 };

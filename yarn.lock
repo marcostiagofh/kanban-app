@@ -2095,6 +2095,11 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
+classnames@^2.2.6:
+  version "2.2.6"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
+  integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
+
 clean-css@4.2.x:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-4.2.1.tgz#2d411ef76b8569b6d0c84068dabe85b0aa5e5c17"
@@ -3505,6 +3510,11 @@ extend-shallow@^3.0.0, extend-shallow@^3.0.2:
     assign-symbols "^1.0.0"
     is-extendable "^1.0.1"
 
+extend@3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/extend/-/extend-3.0.1.tgz#a755ea7bc1adfcc5a31ce7e762dbaadc5e636444"
+  integrity sha1-p1Xqe8Gt/MWjHOfnYtuq3F5jZEQ=
+
 extend@~3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/extend/-/extend-3.0.2.tgz#f8b1136b4071fbd8eb140aff858b1019ec2915fa"
@@ -4406,6 +4416,13 @@ https-browserify@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-1.0.0.tgz#ec06c10e0a34c0f2faf199f7fd7fc78fffd03c73"
   integrity sha1-7AbBDgo0wPL68Zn3/X/Hj//QPHM=
+
+icon.react@^0.2.3:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/icon.react/-/icon.react-0.2.3.tgz#348b861689d235441fd4df773f3555951ebe7aff"
+  integrity sha512-e3Y/u2yGVIvjDg0yD6vIrwx25XeFA6hgyZUpehxtAD2bihbGN0NKiMx7XZSR1T6UxCSv30eB7Zum04ta6XH6PA==
+  dependencies:
+    react-spread-props "^0.1.0"
 
 iconv-lite@0.4.23:
   version "0.4.23"
@@ -7519,7 +7536,7 @@ prompts@^0.1.9:
     kleur "^2.0.1"
     sisteransi "^0.1.1"
 
-prop-types@^15.6.1, prop-types@^15.6.2:
+prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2:
   version "15.6.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.2.tgz#05d5ca77b4453e985d60fc7ff8c859094a497102"
   integrity sha512-3pboPvLiWD7dkI3qf3KbUe6hKFKa52w+AE0VCqECtf+QHAKgOL37tTaNCnuX1nAAQ4ZhyP+kYVKf8rLmJ/feDQ==
@@ -7724,7 +7741,7 @@ react-dev-utils@^6.1.1:
     strip-ansi "4.0.0"
     text-table "0.2.0"
 
-react-dom@^16.6.3:
+react-dom@^16.4.0, react-dom@^16.6.3:
   version "16.6.3"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.6.3.tgz#8fa7ba6883c85211b8da2d0efeffc9d3825cccc0"
   integrity sha512-8ugJWRCWLGXy+7PmNh8WJz3g1TaTUt1XyoIcFN+x0Zbkoz+KKdUyx1AQLYJdbFXjuF41Nmjn5+j//rxvhFjgSQ==
@@ -7817,7 +7834,21 @@ react-scripts@2.1.1:
   optionalDependencies:
     fsevents "1.2.4"
 
-react@^16.6.3:
+react-selector@^0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/react-selector/-/react-selector-0.0.5.tgz#769395c0dc1ac79fbe5ee8c81097a0c233a695e6"
+  integrity sha1-dpOVwNwax5++XujIEJegwjOmleY=
+
+react-spread-props@^0.1.0, react-spread-props@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/react-spread-props/-/react-spread-props-0.1.1.tgz#c9802ad02eb6f9a6920ec2aac9a4966744db8530"
+  integrity sha512-OBl5OlQZzjorfGriA1QWaHl/n+5R3jjx9qlI2v7zv6tURp5AeTJtiS+gMxEfbK4tJfI8Y+zoKOFNZ6hSd1l8ww==
+  dependencies:
+    prop-types "^15.6.0"
+    safe-extend "^3.0.5"
+    util.react "^1.6.0"
+
+react@^16.4.0, react@^16.6.3:
   version "16.6.3"
   resolved "https://registry.yarnpkg.com/react/-/react-16.6.3.tgz#25d77c91911d6bbdd23db41e70fb094cc1e0871c"
   integrity sha512-zCvmH2vbEolgKxtqXL2wmGCUxUyNheYn/C+PD1YAjfxHC54+MhdruyhO7QieQrYsYeTxrn93PM2y0jRH1zEExw==
@@ -8233,6 +8264,13 @@ safe-buffer@5.1.2, safe-buffer@^5.0.1, safe-buffer@^5.1.0, safe-buffer@^5.1.1, s
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.2.tgz#991ec69d296e0313747d59bdfd2b745c35f8828d"
   integrity sha512-Gd2UZBJDkXlY7GbJxfsE8/nvKkUEU1G38c1siN6QP6a9PT9MmHB8GnpscSmMJSoF8LOIrt8ud/wPtojys4G6+g==
 
+safe-extend@^3.0.5:
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/safe-extend/-/safe-extend-3.0.5.tgz#986110b727009bea82c6c38811393d66f4751c8f"
+  integrity sha512-BRP4XvsthJEHVbE1nMmQGtThdO9nn68lT4Gph1iZNufpy2MSw24lnYVNwBr/PwrG1nW/WdWmetmfd2iCcIh0yw==
+  dependencies:
+    extend "3.0.1"
+
 safe-regex@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/safe-regex/-/safe-regex-1.1.0.tgz#40a3669f3b077d1e943d44629e157dd48023bf2e"
@@ -8314,6 +8352,24 @@ select-hose@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/select-hose/-/select-hose-2.0.0.tgz#625d8658f865af43ec962bfc376a37359a4994ca"
   integrity sha1-Yl2GWPhlr0Psliv8N2o3NZpJlMo=
+
+selector.react@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/selector.react/-/selector.react-0.1.0.tgz#a4373dcad0cab1cb783a2808584a292eba53117f"
+  integrity sha512-uv+Vz2rX8RWekFBy9/NDWBGxG+sdi8jFhCCamTUJZQPCnNXMnrxIShAkTob9ub57D30B6TCw/TvmszUKYHVnuQ==
+  dependencies:
+    prop-types "^15.6.0"
+    react-spread-props "^0.1.1"
+    tree-logic "^0.2.0"
+    util.react "^1.6.0"
+  optionalDependencies:
+    react "^16.4.0"
+    react-dom "^16.4.0"
+
+selector@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/selector/-/selector-1.0.0.tgz#84b04fafc6b90bfa237a9d1b097062f163022fbd"
+  integrity sha512-Y0G7V2W8PuWyZv+w3OfTx+pu0BbWxBqEqkVCxI8q2APGYygChngpjWBiL9OzGOg9Y8JMH47sTTvLOHlaCCI5kw==
 
 selfsigned@^1.9.1:
   version "1.10.4"
@@ -8970,6 +9026,11 @@ text-table@0.2.0, text-table@^0.2.0:
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=
 
+themes-classname@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/themes-classname/-/themes-classname-2.0.0.tgz#f61bacb4fe9dfdab9f617c3d16f98df3be97e313"
+  integrity sha512-URL7X23zxccQs6BwwdUYk1prxDyR1TQxcnumyQEmtdHtTWFlAq+0AD3ghqzRpZRt2YU4d9/az1pl9jPt/Ghk8A==
+
 throat@^4.0.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/throat/-/throat-4.1.0.tgz#89037cbc92c56ab18926e6ba4cbb200e15672a6a"
@@ -9078,6 +9139,13 @@ tr46@^1.0.1:
   integrity sha1-qLE/1r/SSJUZZ0zN5VujaTtwbQk=
   dependencies:
     punycode "^2.1.0"
+
+tree-logic@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/tree-logic/-/tree-logic-0.2.0.tgz#1e8fe57ba397f54c992402678953e85bdf1129c8"
+  integrity sha512-umEgmKRN/0v9h6ZQhkm8CcS5r51siovtTiHMo6PoEe9ZqI0s14E84boTboY6TnWukBPnR+eYeN2VL11zPRJroQ==
+  dependencies:
+    lodash "^4.17.4"
 
 trim-right@^1.0.1:
   version "1.0.1"
@@ -9305,6 +9373,18 @@ util.promisify@1.0.0, util.promisify@^1.0.0, util.promisify@~1.0.0:
   dependencies:
     define-properties "^1.1.2"
     object.getownpropertydescriptors "^2.0.3"
+
+util.react@^1.6.0:
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/util.react/-/util.react-1.7.1.tgz#c60830dd6ea91357eccd0bc68917e91d2aa82251"
+  integrity sha512-y1kf2aVF2R+9P6hthQi64l77YQ0a3kpJ4JnqpLf/TRomNqWBNV0++V29ci/j34MiNCzqZxZD09OxSrLGtStF2g==
+  dependencies:
+    classnames "^2.2.6"
+    themes-classname "^2.0.0"
+  optionalDependencies:
+    icon.react "^0.2.3"
+    react "^16.4.0"
+    react-dom "^16.4.0"
 
 util@0.10.3:
   version "0.10.3"
