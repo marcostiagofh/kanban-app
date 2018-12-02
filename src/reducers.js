@@ -1,57 +1,29 @@
 import * as actions from "./actions";
-import deepFreeze from "deep-freeze"
+import deepFreeze from "deep-freeze";"
 
 export default (state = {}, action) => {
   switch (action.type) {
     case actions.LOAD:
       return {
-        columns: [
-          {
-            name: "Backlog",
-            cards: [{ name: "Card A" }]
-          },
-          {
-            name: "Doing",
-            cards: [{ name: "Card B" }]
-          },
-          {
-            name: "Done",
-            cards: [{ name: "Card C" }]
-          }
-        ]
+        1: { name: "Card A", id: 1, columnIndex: 0 },
+        2: { name: "Card B", id: 2, columnIndex: 1 },
+        3: { name: "Card C", id: 3, columnIndex: 2 }
       };
     case actions.MOVE: {
-      const { columnIndex, cardIndex, direction } = action;
-      //Clone columns parent array
-      const columns = [...state.columns]
-      //Clone src & dest sub-arrays
-      columns[columnIndex] = {
-        ...columns[columnIndex],
-        cards: [...columns[columnIndex].cards]
+      deepFreeze(state)
+      const { columnIndex, cardId, direction } = action;
+      return{
+        ...state, 
+        [cardId]: {
+          ...state[cardId],
+          columnIndex: columnIndex + direction
+        }
       }
-      columns[columnIndex + direction]= {
-        ...columns[columnIndex + direction],
-        cards: [...columns[columnIndex + direction].cards]
-      }
-      //splice out of the src sub-array
-      const [card] = columns[columnIndex].cards.splice(cardIndex, 1);
-      //push into the dest sub-array
-      columns[columnIndex + direction].cards.push(card);
-      return { ...state, columns };
     }
     case actions.ADD: {
-      const { card, columnIndex } = action;
-      const columns = [...state.columns]
-      columns[columnIndex] = {
-        ...columns[columnIndex],
-        cards: [
-          ...columns[columnIndex].cards,
-          card
-        ]
-      }
-      return { ...state, columns };
+      const { card } = action;
+      return { ...state, [card.id]: ca};
     }
-    default:
+    default: return state
   }
-  return state;
 };
